@@ -2,7 +2,7 @@
   "subject": "Java",
   "title": "Chapter 1 : Basics",
   "createdAt": "2026-08-01T19:31:55.773Z",
-  "updatedAt": "2026-08-01T19:31:55.773Z",
+  "updatedAt": "2026-08-01T19:33:35.023Z",
   "blocks": [
     {
       "type": "paragraph",
@@ -23,7 +23,12 @@
         },
         {
           "text": ": everything in java lives inside a class. No lose functions, no code floating around."
-        },
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
         {
           "text": "object-oriented",
           "marks": [
@@ -32,7 +37,12 @@
         },
         {
           "text": ": you model your program as objects that have data(fields) and behaviour(methods)."
-        },
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
         {
           "text": "platform-independent",
           "marks": [
