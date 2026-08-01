@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+/* One palette for the whole app — home, chapters, and editor all sit on the
+ * same warm paper. */
+@theme {
+  --color-paper: #f7f6f2;
+  --color-ink: #201f1c;
+  --color-ink-soft: #55524a;
+  --color-faint: #a29d91;
+  --color-line: #e4e1d8;
+  --color-slab: #26251f;
+
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    background: var(--color-paper);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-ink);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: var(--color-line);
+  }
+}
+
+@layer components {
+
+  /* ── Shared ─────────────────────────────────────────── */
+
+  .page-wrapper {
+    @apply min-h-screen bg-paper;
+  }
+
+  .page-main {
+    @apply max-w-2xl mx-auto px-6 pt-24 pb-24;
+  }
+
+  .nav-link {
+    @apply inline-flex items-center gap-2 text-sm text-faint hover:text-ink transition-colors;
+  }
+
+  .nav-bar {
+    @apply flex items-center justify-between gap-6 mb-12;
+  }
+
+  .section-label {
+    @apply text-sm font-bold uppercase tracking-[0.14em] text-ink mb-6;
+  }
+
+  .page-header {
+    @apply mt-12 mb-10 pb-6 border-b border-line;
+  }
+
+  .page-title {
+    @apply text-3xl md:text-4xl font-semibold tracking-tight leading-snug mb-2;
+  }
+
+  .page-meta {
+    @apply text-sm text-faint;
+  }
+
+  .empty-note {
+    @apply text-lg text-faint;
+  }
+
+  /* ── Index lists (subjects, chapters) ───────────────── */
+
+  .index-list {
+    @apply flex flex-col;
+  }
+
+  .index-item {
+    @apply flex items-baseline justify-between gap-6 mb-5 last:mb-0;
+  }
+
+  .index-item-link {
+    @apply text-lg text-ink underline underline-offset-4 decoration-line hover:decoration-faint transition-colors;
+  }
+
+  .index-item-meta {
+    @apply text-[0.9375rem] text-faint whitespace-nowrap;
+  }
+
+  /* ── Rendered notes ─────────────────────────────────── */
+
+  .note-text {
+    @apply text-xl text-ink-soft leading-[1.75];
+  }
+
+  .block-heading {
+    @apply font-semibold tracking-tight text-ink mt-10 mb-3 leading-snug;
+  }
+
+  .inline-code {
+    @apply font-mono text-[0.85em] bg-line/70 text-ink rounded px-[0.32em] py-[0.12em];
+  }
+
+  .code-block {
+    @apply font-mono text-[0.9375rem] leading-[1.7] bg-slab text-[#f4f3ef] rounded-lg
+           px-5 py-4 my-6 overflow-x-auto whitespace-pre;
+  }
+
+  /* ── Buttons ────────────────────────────────────────── */
+
+  .ghost-button {
+    @apply inline-flex items-center gap-2 text-sm text-ink-soft border border-line rounded-md
+           px-3 py-1.5 hover:border-faint hover:text-ink transition-colors disabled:opacity-40
+           disabled:cursor-not-allowed;
+  }
+
+  .text-input {
+    @apply w-full bg-transparent border border-line rounded-md px-3 py-2 text-base text-ink
+           outline-none placeholder:text-faint focus:border-faint transition-colors;
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "subject": "Neetcode",
+  "title": "Chapter 1 : Arrays & Hashing",
+  "createdAt": "2026-08-01T17:23:43.810Z",
+  "updatedAt": "2026-08-01T17:34:36.628Z",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "content": [
+        {
+          "text": "What is this data structure/technique?"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "A HashMap stores key-value pairs. "
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "A HashSet stores just unique values. "
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": [
+        {
+          "text": "What does it look like visually in my head?"
+        }
+      ]
+    },
+    {
+      "type": "code",
+      "language": "java",
+      "code": "Array: [2, 2, 7, 11, 15]\nHashSet: {2, 7, 11, 15}\nHashMap: {2 -> 0, 2 -> 1, 7 -> 2, 11 -> 3, 15 -> 4}"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": [
+        {
+          "text": "What are the core operations and their costs?"
+        }
+      ]
+    },
+    {
+      "type": "code",
+      "language": "java",
+      "code": "Insert into HashMap/HashSet -> O(1)\nLookup into HashMap/HashSet -> O(1)\nDelete from HashMap/HashSet -> O(1)\nIterating the array -> O(1)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": [
+        {
+          "text": "What is the general template?  "
+        }
+      ]
+    },
+    {
+      "type": "code",
+      "language": "java",
+      "code": "Create an empty HashMap or HashSet\n\nFor each element in the array:\n      Check if this element(or something related to it) exists\n      in the map\n\n      If YES -> you have your answer, return it\n\n      If NO -> store this element and continue\n\nReturn result after the loop ends"
+    }
+  ]
+}
