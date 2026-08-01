@@ -1,0 +1,48 @@
+{
+  "subject": "Java",
+  "title": "Chapter 1 : Basics",
+  "createdAt": "2026-08-01T19:31:55.773Z",
+  "updatedAt": "2026-08-01T19:31:55.773Z",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "Java is a class-based, object-oriented programming language which is platform-independent."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "class-based",
+          "marks": [
+            "bold"
+          ]
+        },
+        {
+          "text": ": everything in java lives inside a class. No lose functions, no code floating around."
+        },
+        {
+          "text": "object-oriented",
+          "marks": [
+            "bold"
+          ]
+        },
+        {
+          "text": ": you model your program as objects that have data(fields) and behaviour(methods)."
+        },
+        {
+          "text": "platform-independent",
+          "marks": [
+            "bold"
+          ]
+        },
+        {
+          "text": ": compiled java code requires JVM to interpret it. Thus, any platform which has JVM installed can run java code."
+        }
+      ]
+    }
+  ]
+}
