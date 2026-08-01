@@ -1,0 +1,122 @@
+{
+  "subject": "Java",
+  "title": "Chapter 3 : Conditional Statements",
+  "createdAt": "2026-08-01T20:19:20.839Z",
+  "updatedAt": "2026-08-01T20:19:26.639Z",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "content": [
+        {
+          "text": "If-Else"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "if",
+          "marks": [
+            "bold"
+          ]
+        },
+        {
+          "text": " -> single condition and single solution"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "if-else",
+          "marks": [
+            "bold"
+          ]
+        },
+        {
+          "text": " -> one condition and two solutions"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "if-else (ladder) ",
+          "marks": [
+            "bold"
+          ]
+        },
+        {
+          "text": "-> multiple conditions and multiple solutions"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "if-else (nested)",
+          "marks": [
+            "bold"
+          ]
+        },
+        {
+          "text": " -> multiple conditions and one solution"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": [
+        {
+          "text": "Switch"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "compact form of if-else (ladder)"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "Old Java",
+          "marks": [
+            "bold"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "code",
+      "language": "java",
+      "code": "int day = 1;\nString result;\nswitch (day) {\n    case 1:\n        result = \"Monday\";\n        break;\n    case 2:\n        result = \"Tuesday\";\n        break;\n    default:\n        result = \"Invalid\";\n}"
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "Java 14+",
+          "marks": [
+            "bold"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "code",
+      "language": "java",
+      "code": "int day = 1;\nString result = switch (day) {\n    case 1 -> \"Monday\";\n    case 2 -> \"Tuesday\";\n    default -> \"Invalid\";\n};"
+    }
+  ]
+}

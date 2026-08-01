@@ -1,0 +1,125 @@
+{
+  "subject": "Java",
+  "title": "Chapter 4 : Loops",
+  "createdAt": "2026-08-01T20:23:42.072Z",
+  "updatedAt": "2026-08-01T20:23:56.872Z",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "content": [
+        {
+          "text": "Loops"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "A control structure that repeats a block of code as long as condition is true."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "It had 3 things:"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "content": [
+            {
+              "text": "condition (the question asked each time)"
+            }
+          ]
+        },
+        {
+          "content": [
+            {
+              "text": "body (the block of code that repeats)"
+            }
+          ]
+        },
+        {
+          "content": [
+            {
+              "text": "update (something that eventually makes the condition false)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": [
+        {
+          "text": "Choose the loop based on what you know"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "for",
+          "marks": [
+            "bold"
+          ]
+        },
+        {
+          "text": " -> you know the the count"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "while",
+          "marks": [
+            "bold"
+          ]
+        },
+        {
+          "text": " -> you know the condition, not the count"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "do-while",
+          "marks": [
+            "bold"
+          ]
+        },
+        {
+          "text": " -> must runn at least once"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "for-each",
+          "marks": [
+            "bold"
+          ]
+        },
+        {
+          "text": " -> just need every element, no index needed"
+        }
+      ]
+    }
+  ]
+}

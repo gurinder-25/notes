@@ -1,0 +1,137 @@
+{
+  "subject": "Java",
+  "title": "Chapter 2 : Variables and Data Types",
+  "createdAt": "2026-08-01T20:13:31.656Z",
+  "updatedAt": "2026-08-01T20:13:55.340Z",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "content": [
+        {
+          "text": "Variables"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "variables are named memory locations."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "It consist of:"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "content": [
+            {
+              "text": "Identifier (the name you give it)"
+            }
+          ]
+        },
+        {
+          "content": [
+            {
+              "text": "Memory address (where it actually lives like 0x7ffe5367e044)"
+            }
+          ]
+        },
+        {
+          "content": [
+            {
+              "text": "Value (whats stored)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": [
+        {
+          "text": "Data Types"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "There are two types: Primitive and Reference."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "content": [
+        {
+          "text": "Primitive"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "stores value directly"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "content": [
+            {
+              "text": "byte, short, int, long, float, double, char, boolean"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "content": [
+        {
+          "text": "Reference"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "stores address of object"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "content": [
+            {
+              "text": "String, Arrays, Classes, Interfaces, Collections, Wrappers, Enum"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

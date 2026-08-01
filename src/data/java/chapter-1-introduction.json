@@ -1,8 +1,8 @@
 {
   "subject": "Java",
-  "title": "Chapter 1 : Basics",
+  "title": "Chapter 1 : Introduction",
   "createdAt": "2026-08-01T19:31:55.773Z",
-  "updatedAt": "2026-08-01T19:33:35.023Z",
+  "updatedAt": "2026-08-01T20:08:55.639Z",
   "blocks": [
     {
       "type": "paragraph",
@@ -53,6 +53,11 @@
           "text": ": compiled java code requires JVM to interpret it. Thus, any platform which has JVM installed can run java code."
         }
       ]
+    },
+    {
+      "type": "code",
+      "language": "java",
+      "code": "Main.java\n    │\n    ▼\njavac\n    │\n    ▼\nMain.class (Bytecode)\n    │\n    ▼\nJVM\n├── Class Loader\n├── Bytecode Verification\n├── Interpreter\n└── JIT Compiler\n    │\n    ▼\nMachine Code (Binary)"
     }
   ]
 }
