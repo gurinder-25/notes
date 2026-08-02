@@ -1,0 +1,135 @@
+{
+  "subject": "Java",
+  "title": "Chapter 8 : Class and Object",
+  "createdAt": "2026-08-02T07:59:02.293Z",
+  "updatedAt": "2026-08-02T08:09:00.216Z",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "content": [
+        {
+          "text": "Class"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "It's a blueprint/template/plan written by you, that describes:"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "content": [
+            {
+              "text": "what data a thing should hold (fields)"
+            }
+          ]
+        },
+        {
+          "content": [
+            {
+              "text": "what actions a thing can perform (methods)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "code",
+      "language": "java",
+      "code": "//Class - Blueprint (template)\nclass Dog {\n\n    //Fields (Data)\n    //\"any Dog that get created must have name and age\"\n    String name;\n    int age;\n\n    //Method (Behavior)\n    //\"any Dog that gets created will be able to bark\"\n    void bark() {\n        System.out.println(name + \" says Woof!\");\n    }\n}"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": [
+        {
+          "text": "Object"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "An Object is an instance created from the class."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "When you write new Dog(), java:"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "content": [
+            {
+              "text": "allocates memory in heap."
+            }
+          ]
+        },
+        {
+          "content": [
+            {
+              "text": "creates a new Dog object with its own fields (name, age"
+            }
+          ]
+        },
+        {
+          "content": [
+            {
+              "text": "returns a reference to it."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "code",
+      "language": "java",
+      "code": "Dog d1 = new Dog();\nDog d2 = new Dog();\nd1.name = \"Bruno\";\nd2.name = \"Max\";\n//d1 and d2 are separate objects"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": [
+        {
+          "text": "Memory Representation"
+        }
+      ]
+    },
+    {
+      "type": "code",
+      "language": "java",
+      "code": "Stack                      Heap\n-----                      -------------------------\nd1  ---------------------> Dog Object\n                            name = \"Bruno\"\n                            age  = 0\n-----------------------------------------------------\nd2  ---------------------> Dog Object\n                            name = \"Max\"\n                            age  = 0"
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "\"new\"",
+          "marks": [
+            "bold"
+          ]
+        },
+        {
+          "text": " keyword → creates a new object in the Heap and returns its reference."
+        }
+      ]
+    }
+  ]
+}

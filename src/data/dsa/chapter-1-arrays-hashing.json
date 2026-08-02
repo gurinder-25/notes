@@ -2,14 +2,14 @@
   "subject": "DSA",
   "title": "Chapter 1 : Arrays & Hashing",
   "createdAt": "2026-08-01T20:27:07.289Z",
-  "updatedAt": "2026-08-01T20:27:07.289Z",
+  "updatedAt": "2026-08-02T08:24:29.754Z",
   "blocks": [
     {
       "type": "heading",
       "level": 2,
       "content": [
         {
-          "text": "What is this data structure/technique?"
+          "text": "Data structure/technique used in this?"
         }
       ]
     },

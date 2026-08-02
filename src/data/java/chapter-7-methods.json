@@ -1,0 +1,102 @@
+{
+  "subject": "Java",
+  "title": "Chapter 7 : Methods",
+  "createdAt": "2026-08-02T07:56:29.376Z",
+  "updatedAt": "2026-08-02T07:57:36.392Z",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "content": [
+        {
+          "text": "Methods"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "A Method is a named block of code that performs a specific task, defined once and called whenever needed."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "Two things every method declares upfront:"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "content": [
+            {
+              "text": "what it takes (parameters)"
+            }
+          ]
+        },
+        {
+          "content": [
+            {
+              "text": "what it gives back (return type)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": [
+        {
+          "text": "Parameter"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "content": [
+            {
+              "text": "variable in the method definition."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": [
+        {
+          "text": "Argument "
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "content": [
+            {
+              "text": "the actual value passed in when calling the method."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "code",
+      "language": "java",
+      "code": "// Method definition\nint add(int a, int b) {   // a and b are PARAMETERS\n    return a + b;\n}\n\n// Method call\nint result = add(5, 10);  // 5 and 10 are ARGUMENTS"
+    }
+  ]
+}

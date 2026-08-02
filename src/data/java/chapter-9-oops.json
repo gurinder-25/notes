@@ -1,0 +1,175 @@
+{
+  "subject": "Java",
+  "title": "Chapter 9 : OOPs",
+  "createdAt": "2026-08-02T08:10:10.266Z",
+  "updatedAt": "2026-08-02T08:23:07.655Z",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "content": [
+        {
+          "text": "Object Oriented Programming"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "Object-Oriented Programming (OOP)",
+          "marks": [
+            "bold"
+          ]
+        },
+        {
+          "text": " is a way of writing programs by organising code into "
+        },
+        {
+          "text": "objects",
+          "marks": [
+            "bold"
+          ]
+        },
+        {
+          "text": " that contain both "
+        },
+        {
+          "text": "data (fields) ",
+          "marks": [
+            "bold"
+          ]
+        },
+        {
+          "text": "and "
+        },
+        {
+          "text": "behavior (methods)",
+          "marks": [
+            "bold"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": [
+        {
+          "text": "Without OOP (Procedural Style)"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "Data and functions are kept separate."
+        },
+        {
+          "text": "In this, code is written as just sequence of instructions from top to bottom. "
+        }
+      ]
+    },
+    {
+      "type": "code",
+      "language": "java",
+      "code": "//Loose data and functions\nString name = \"Bruno\";\nbark(name);"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "content": [
+            {
+              "text": "Data "
+            },
+            {
+              "text": "name",
+              "marks": [
+                "bold"
+              ]
+            },
+            {
+              "text": " exists separately."
+            }
+          ]
+        },
+        {
+          "content": [
+            {
+              "text": "Functions "
+            },
+            {
+              "text": "bark()",
+              "marks": [
+                "bold"
+              ]
+            },
+            {
+              "text": " operate on that data."
+            }
+          ]
+        },
+        {
+          "content": [
+            {
+              "text": "As programs grow, keeping related data and behavior together becomes harder."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": [
+        {
+          "text": "With OOP"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "Data and behavior are grouped together inside an object."
+        }
+      ]
+    },
+    {
+      "type": "code",
+      "language": "java",
+      "code": "Dog d1 = new Dog();\n\nd1.name = \"Bruno\";  // Data\nd1.bark();          // Behavior"
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "Here, d1 is a self-contained object that owns:"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "content": [
+            {
+              "text": "Its own data (name, age)"
+            }
+          ]
+        },
+        {
+          "content": [
+            {
+              "text": "Its own behavior (bark())"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

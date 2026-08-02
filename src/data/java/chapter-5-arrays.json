@@ -1,0 +1,86 @@
+{
+  "subject": "Java",
+  "title": "Chapter 5 : Arrays",
+  "createdAt": "2026-08-02T07:36:19.100Z",
+  "updatedAt": "2026-08-02T07:36:19.100Z",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "content": [
+        {
+          "text": "Arrays"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "An Arrays is a fixed-size, ordered collection of elements of same type, stored in continuous memory locations, accessed by index."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "fixed-sized",
+          "marks": [
+            "bold"
+          ]
+        },
+        {
+          "text": ": size is decided at creation and cannot change"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "ordered",
+          "marks": [
+            "bold"
+          ]
+        },
+        {
+          "text": ": element sit in sequence"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "same type",
+          "marks": [
+            "bold"
+          ]
+        },
+        {
+          "text": ": int[] holds only int"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "continuous memory locations",
+          "marks": [
+            "bold"
+          ]
+        },
+        {
+          "text": ": elements sit next to each other in memory"
+        }
+      ]
+    },
+    {
+      "type": "code",
+      "language": "java",
+      "code": "//declare and fill later\nint[] scores = new int [5];\n//{0, 0, 0, 0, 0} - defaults to 0\n\n//declare and fill immediately\nint[] scores = {1, 2, 5, 6, 7}\n\n//to know sizeof\nscores.length\n// not length()"
+    }
+  ]
+}

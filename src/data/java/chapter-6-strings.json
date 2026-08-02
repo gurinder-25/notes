@@ -1,0 +1,178 @@
+{
+  "subject": "Java",
+  "title": "Chapter 6 : Strings",
+  "createdAt": "2026-08-02T07:49:48.741Z",
+  "updatedAt": "2026-08-02T07:51:28.158Z",
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "content": [
+        {
+          "text": "Strings"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "A string is a sequence of characters treated as a single object in java."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "Three things for strings:"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "content": [
+            {
+              "text": "its an object, not primitiveits "
+            }
+          ]
+        },
+        {
+          "content": [
+            {
+              "text": "immutable"
+            }
+          ]
+        },
+        {
+          "content": [
+            {
+              "text": "it lives in string pool"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": [
+        {
+          "text": "Object "
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "content": [
+            {
+              "text": "it lives in heap, not stack"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": [
+        {
+          "text": "Immutable"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "content": [
+            {
+              "text": "once a string object is created, it cannot be changed."
+            }
+          ]
+        },
+        {
+          "content": [
+            {
+              "text": "every method .toUpperCase() or .replace() doesn't touch the original, it creates and returns a brand new string object."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "content": [
+        {
+          "text": "String Pool"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "content": [
+            {
+              "text": "java maintains a special area in Heap called as string pool."
+            }
+          ]
+        },
+        {
+          "content": [
+            {
+              "text": "when you write \"hello\", java checks if \"hello\" already exists in pool. If yes, it reuses the same object instead of creating new one."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "code",
+      "language": "java",
+      "code": "//using string pool\nString s1 = \"hello\";\nString s2 = \"hello\";\n\n//it will print true\nSystem.out.println(s1==s2);\n\n//Creating with string pool, a new object\nString s3 = new String(\"hello\");\n\n//it will print false\nSystem.out.println(s1==s3);\n\n//it will print true\nSystem.out.println(s1.equals(s3));"
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": "==",
+          "marks": [
+            "bold"
+          ]
+        },
+        {
+          "text": " -> checks if they're same object in memory"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "text": ".equals()",
+          "marks": [
+            "bold"
+          ]
+        },
+        {
+          "text": " -> checks if the content is same"
+        }
+      ]
+    },
+    {
+      "type": "code",
+      "language": "java",
+      "code": "//to know sizeof\nString s = \"hello\";\ns.length();\n\n//Bad way - Creates a new String object on every iteration\nString csv = \"\";\n\nfor (int i = 1; i <= 1000; i++) {\n    csv += \"Student-\" + i + \",\";\n}\n\nSystem.out.println(csv);\n\n\n//Better - Modifies the same StringBuilder object\nStringBuilder sb = new StringBuilder();\n\nfor (int i = 1; i <= 1000; i++) {\n    sb.append(\"Student-\").append(i).append(\",\");\n}\n\nString csv = sb.toString();\nSystem.out.println(csv);"
+    }
+  ]
+}
