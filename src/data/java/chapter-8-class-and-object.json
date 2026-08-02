@@ -2,7 +2,7 @@
   "subject": "Java",
   "title": "Chapter 8 : Class and Object",
   "createdAt": "2026-08-02T07:59:02.293Z",
-  "updatedAt": "2026-08-02T08:09:00.216Z",
+  "updatedAt": "2026-08-02T17:05:28.282Z",
   "blocks": [
     {
       "type": "heading",
@@ -67,7 +67,16 @@
       "type": "paragraph",
       "content": [
         {
-          "text": "When you write new Dog(), java:"
+          "text": "When you write "
+        },
+        {
+          "text": "new Dog()",
+          "marks": [
+            "code"
+          ]
+        },
+        {
+          "text": ", java:"
         }
       ]
     },
@@ -85,7 +94,7 @@
         {
           "content": [
             {
-              "text": "creates a new Dog object with its own fields (name, age"
+              "text": "creates a new Dog object with its own fields (name, age)"
             }
           ]
         },
@@ -121,13 +130,13 @@
       "type": "paragraph",
       "content": [
         {
-          "text": "\"new\"",
+          "text": "new",
           "marks": [
-            "bold"
+            "code"
           ]
         },
         {
-          "text": " keyword → creates a new object in the Heap and returns its reference."
+          "text": " keyword → creates a new object in the Heap and returns its reference."
         }
       ]
     }

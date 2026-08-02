@@ -2,7 +2,7 @@
   "subject": "Java",
   "title": "Chapter 9 : OOP",
   "createdAt": "2026-08-02T08:10:10.266Z",
-  "updatedAt": "2026-08-02T08:29:27.306Z",
+  "updatedAt": "2026-08-02T17:04:59.549Z",
   "blocks": [
     {
       "type": "heading",
@@ -93,7 +93,7 @@
             {
               "text": "name",
               "marks": [
-                "bold"
+                "code"
               ]
             },
             {
@@ -109,7 +109,7 @@
             {
               "text": "bark()",
               "marks": [
-                "bold"
+                "code"
               ]
             },
             {
@@ -152,7 +152,16 @@
       "type": "paragraph",
       "content": [
         {
-          "text": "Here, d1 is a self-contained object that owns:"
+          "text": "Here, "
+        },
+        {
+          "text": "d1",
+          "marks": [
+            "code"
+          ]
+        },
+        {
+          "text": " is a self-contained object that owns:"
         }
       ]
     },
