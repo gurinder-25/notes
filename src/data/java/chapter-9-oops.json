@@ -2,7 +2,7 @@
   "subject": "Java",
   "title": "Chapter 9 : OOPs",
   "createdAt": "2026-08-02T08:10:10.266Z",
-  "updatedAt": "2026-08-02T08:23:07.655Z",
+  "updatedAt": "2026-08-02T08:26:09.072Z",
   "blocks": [
     {
       "type": "heading",
@@ -65,7 +65,12 @@
       "content": [
         {
           "text": "Data and functions are kept separate."
-        },
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
         {
           "text": "In this, code is written as just sequence of instructions from top to bottom. "
         }
