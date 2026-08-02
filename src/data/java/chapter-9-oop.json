@@ -2,7 +2,7 @@
   "subject": "Java",
   "title": "Chapter 9 : OOP",
   "createdAt": "2026-08-02T08:10:10.266Z",
-  "updatedAt": "2026-08-02T08:27:03.839Z",
+  "updatedAt": "2026-08-02T08:29:27.306Z",
   "blocks": [
     {
       "type": "heading",
@@ -120,7 +120,7 @@
         {
           "content": [
             {
-              "text": "As programs grow, keeping related data and behavior together becomes harder."
+              "text": "As programs grows, keeping related data and behavior together becomes harder."
             }
           ]
         }
